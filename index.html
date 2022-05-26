@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    <!-- bootstrap cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- fontawesome cdn link -->
+    <script src="https://kit.fontawesome.com/f8d1b1ce75.js" crossorigin="anonymous"></script>
+    <!-- jquery cdn link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- popper.js link -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <!-- bootstrap.js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <!-- ripples.js link -->
+    <script src="javascript/jquery.ripples-min.js"></script>
+    <!-- typed.js link -->
+    <script src="javascript/typed.min.js"></script>
+    <!-- portfolio.js link -->
+    <script src="javascript/portfolio.js"></script>
+    <!-- waypoint.js link -->
+    <script src="javascript/jquery.waypoints.min.js"></script>
+    <!-- counterup.js link -->
+    <script src="javascript/jquery.counterup.min.js"></script>
+    <!-- owl-carousel.js link -->
+    <script src="javascript/owl.carousel.min.js"></script>
+    <!-- owl-carousel.css link -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <!-- owl-theme-green.css link -->
+    <link rel="stylesheet" href="css/owl.theme.green.css">
+    <!-- animate.css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- portfolio.css link -->
+    <link rel="stylesheet" href="css/portfolio.css">
+    <!-- Aos animation -->
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet" />
+    <!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body data-spy="scroll">
+    <!-- scrollTop button -->
+    <button id="scrolltop"><i class="fas fa-angle-double-up"></i></button>
+    <!-- whatsapp button -->
+    <a href="https://api.whatsapp.com/send?phone=03170068650&text=hi nice to meet you." class="float" target="_blank" title="send message" data-toggle="tooltip" data-placement="right"><i class="fa fa-whatsapp my-float"></i></a>
+    <!-- newsletter modal box -->
+    <div class="modal fade" id="modalbox" data-backdrop="static" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                    <div class="newsletter">
+                        <h1>Get Newsletter</h1>
+                        <hr>
+                        <p>Enter your email in the box below to receive latest news and information about our activities</p>
+                        <form>
+                            <input type="email" placeholder="Email" required><br/>
+                            <button type="submit">Submit Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="menu">
+            <nav class="navbar navbar-light navbar-expand-lg rounded fixed-top" id="navbar">
+                <a class="navbar-brand" id="title">Muhammad Ali Mirza</a>
+                <button class="navbar-toggler btn-primary" data-toggle="collapse" data-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav ml-auto mr-5">
+                    <li class="nav-item"><a href="#section1" class="nav-link active" id="active">Home</a></li>
+                    <li class="nav-item"><a href="#about-us" class="nav-link">About us</a></li>
+                    <li class="nav-item" id="service"><a href="#services" class="nav-link">Services <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Web design</a>
+                            <a href="#">wordpress</a>
+                            <a href="#">data entry</a>
+                          </div>
+                    </li>
+                    <li class="nav-item"><a href="" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">projects</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#contactBox" class="nav-link">contact us</a></li>
+                </ul>
+            </div>
+            </nav>
+        </div>
+        <section>
+            <div class="row" id="section1">
+                <div class=" col-md-6 col-sm-12 order-md-0 order-1">
+                    <div class="title">
+                        <h1 data-aos="fade-up-right">I am<span> Muhammad Ali Mirza</span></h1>
+                          <div class="text"></div>
+                          <button type="submit" data-aos="zoom-in">Contact us</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 text-center order-md-1 order-0">
+                <img src="images/ali.jpg" alt="" srcset="" class="img-fluid rounded-lg rounded-circle img-thumbnail" id="ali" data-aos="slide-down">
+            </div>
+            <div class="col-12 order-2">
+                <div class="social-networks">
+                    <ul>
+                        <li><i class="fab fa-facebook-f" title="facebook" data-toggle="tooltip" data-aos="fade-right"></i></li>
+                        <li><i class="fab fa-instagram" title="instagram" data-toggle="tooltip" data-aos="fade-right" data-aos-delay="1000"></i></li>
+                        <li><i class="fab fa-twitter" title="twitter" data-toggle="tooltip" data-aos="fade-right" data-aos-delay="2000"></i></li>
+                        <li><i class="fab fa-linkedin-in" title="linkendin" data-toggle="tooltip" data-aos="fade-right" data-aos-delay="2500"></i></li>
+                        <li><i class="fab fa-youtube" title="youtube" data-toggle="tooltip" data-aos="fade-right" data-aos-delay="3000"></i></li>
+                        <li><i class="fab fa-github" title="follow me on github" data-toggle="tooltip" data-aos="fade-right" data-aos-delay="3000"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+                 <section>
+                    <div class="row" id="about-us">
+                    <h2 class="text-center mb-5">About us</h2>
+                    <div class="col-lg-4 mb-5">
+                        <img src="images/a4 (1).jpg" alt="" id="mirza">
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="content">
+                        <h3>I am <span id="blue">Muhammad ali mirza</span></h3>
+                        <p>Full-stack Software Developer and Javascript Enthusiast, Who Likes Building Things In Javascript. Please visit my channel for awesome stuff</p>
+                        <p>
+                            <span id="blue">Date of birth</span>
+                            <span>13 February 2012</span>
+                        </p>
+                        <p>
+                            <span id="blue">Spoken Languages</span>
+                            <span>English - Urdu</span>
+                        </p>
+                        <p>
+                            <span id="blue">Nationality</span>
+                            <span>Pakistan</span>
+                        </p>
+                        <p>
+                            <span id="blue">Interest</span>
+                            <span>Music - Reading - Travel</span>
+                        </p>
+                        <button id="download">Download CV</button>
+                    </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-12">
+                        <div class="left">
+                            <div class="inner__left">
+                                <div class="heading">
+                                    <i class="fas fa-university"></i>
+                                    <h5>Education</h5>
+                                </div>
+                                <div class="timeline__wrapper">
+                                    <div class="item">
+                                        <p>2015-2017</p>
+                                        <p class="center">matric</p>
+                                        <p>Army public school mangla cantt</p>
+                                    </div>
+                                    <div class="item">
+                                        <p>2017-2019</p>
+                                        <p class="center">intermediate</p>
+                                        <p>Fg inter college mangla cantt</p>
+                                    </div>
+                                    <div class="item">
+                                        <p>currently studying</p>
+                                        <p class="center">Bachelor of science</p>
+                                        <p>Computer Science</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-12" id="stats" class="counter">
+                        <div class="row count m-0">
+                            <div class="col-sm-2 offset-sm-1 col-xs-6 record">
+                            <i class="fa fa-user"></i>
+                            <h2 class="statistic-counter">190</h2>
+                            <p>Happy Clients</p>
+                            </div>
+                            <div class="col-sm-2 offset-sm-1 col-xs-6 record">
+                            <i class="fa fa-desktop"></i>
+                            <h2 class="statistic-counter">374</h2>
+                            <p>Modern Websites</p>
+                            </div>
+                            <div class="col-sm-2 offset-sm-1 col-xs-6 record">
+                            <i class="fa fa-trophy"></i>
+                            <h2 class="statistic-counter">935</h2>
+                            <p>WINNING AWARDS</p>
+                            </div>
+                            <div class="col-sm-2 offset-sm-1 col-xs-6 record">
+                            <i class="fa fa-comment-o"></i>
+                            <h2 class="statistic-counter">427</h2>
+                            <p>Fast Support</p>
+                            </div>
+                            </div>
+                    </div>
+                    </div>
+                </section>
+                <section>
+            <div class="row" id="skills">
+            <h2 class="text-center mb-5">Skills</h2>
+            <div class="col-lg-6 col-md-12">
+                <h3 class="text-center">Frontend languages</h3>
+                <div class="skill">
+                    <h3 class="progress-title">HTML5</h3>
+            <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: #34b1c4; width: 90%;">
+            <div class="progress-value">90%</div>
+            </div>
+            </div>
+            <h3 class="progress-title">CSS3</h3>
+            <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: #34b1c4; width: 80%;">
+            <div class="progress-value">80%</div>
+            </div>
+            </div>
+            <h3 class="progress-title">Bootstrap</h3>
+            <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: #34b1c4; width: 80%;">
+            <div class="progress-value">80%</div>
+            </div>
+            </div>
+            <h3 class="progress-title">JavaScript</h3>
+            <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: #34b1c4; width: 70%;">
+            <div class="progress-value">70%</div>
+            </div>
+            </div>
+            <h3 class="progress-title">jQuery</h3>
+            <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: #34b1c4; width: 70%;">
+            <div class="progress-value">70%</div>
+            </div>
+            </div>
+            <h3 class="progress-title">React js</h3>
+            <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: #34b1c4; width: 70%;">
+            <div class="progress-value">70%</div>
+            </div>
+            </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <h3 class="text-center">Backend languages</h3>
+                <div class="skill">
+            <h3 class="progress-title">Php</h3>
+            <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: #34b1c4; width: 70%;">
+            <div class="progress-value">80%</div>
+            </div>
+            </div>
+            <h3 class="progress-title">Mysql</h3>
+            <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: #34b1c4; width: 70%;">
+            <div class="progress-value">80%</div>
+            </div>
+            </div>
+            <h3 class="progress-title">Ajax</h3>
+            <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: #34b1c4; width: 70%;">
+            <div class="progress-value">70%</div>
+            </div>
+            </div>
+            <h3 class="progress-title">Node js</h3>
+            <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: #34b1c4; width: 70%;">
+            <div class="progress-value">70%</div>
+            </div>
+            </div>
+            <h3 class="progress-title">laravel</h3>
+            <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: #34b1c4; width: 70%;">
+            <div class="progress-value">70%</div>
+            </div>
+            </div>
+            <h3 class="progress-title">mongoDb</h3>
+            <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: #34b1c4; width: 70%;">
+            <div class="progress-value">70%</div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <h1 class="text-center mb-5 mt-5">certificates</h1>
+            <div class="col-12 m-0 p-0">
+                <div class="owl-carousel owl-theme" id="certificates">
+                    <div class="item"><img src="images/html-1.jpg" alt=""></div>
+                    <div class="item"><img src="images/html.jpeg" alt=""></div>
+                    <div class="item"><img src="images/css-1.jpg" alt=""></div>
+                    <div class="item"><img src="images/css.jpeg" alt=""></div>
+                    <div class="item"><img src="images/javascript-1.jpg" alt=""></div>
+                    <div class="item"><img src="images/javascript.jpeg" alt=""></div>
+                    <div class="item"><img src="images/responsive web design.jpeg" alt=""></div>
+                    <div class="item"><img src="images/coding for marketers.jpeg" alt=""></div>
+                    <div class="item"><img src="images/jquery.jpeg" alt=""></div>
+                    <div class="item"><img src="images/jquery-1.jpg" alt=""></div>
+                    <div class="item"><img src="images/bootstrap.jpg" alt=""></div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section>
+            <div class="row mt-5" id="services">
+                <h2 class="text-center mb-5">services</h2>
+                <div class="service">
+                    <img src="images/responsive web design.jpg">
+                    <h3 class="text-center">web design</h3>
+                </div>
+                <div class="service">
+                    <img src="images/app developement.jpg">
+                    <h3 class="text-center">app developement</h3>
+                </div>
+                <div class="service">
+                    <img src="images/web developement.jpg">
+                    <h3 class="text-center">web developement</h3>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row mt-5" id="testinominals">
+                <h2 class="text-center mb-5">testinominals</h2>
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-caption">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius soluta nihil hic, neque ipsam voluptas nesciunt molestias eligendi dolor doloribus. </p> <img src="https://i.imgur.com/lE89Aey.jpg" class="img-fluid">
+                                <div id="image-caption">Nick Doe</div>
+                                <div id="rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-caption">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel et explicabo debitis facere praesentium impedit, voluptatem doloribus magnam minima officia.</p> <img src="https://i.imgur.com/QptVdsp.jpg" class="img-fluid">
+                                <div id="image-caption">Cromption Greves</div>
+                                <div id="rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-caption">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nemo voluptates, nostrum sapiente est dolores velit accusantium deleniti id fuga.
+                                </p> <img src="https://i.imgur.com/jQWThIn.jpg" class="img-fluid">
+                                <div id="image-caption">Harry Mon</div>
+                                <div id="rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <a class="carousel-control-prev" href="#demo" data-slide="prev"> <i class='fas fa-arrow-left'></i> </a> <a class="carousel-control-next" href="#demo" data-slide="next"> <i class='fas fa-arrow-right'></i> </a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="projects">
+                <div class="row">
+            <h2 class="text-center mt-5 mb-5">projects</h2>
+            <div class="col-lg-4 mt-5 col-md-6 col-sm-12 project html" data-item="html">
+                <div class="card">
+                    <div class="projects">
+                <img src="images/14.PNG" alt="" class="card-img-top">
+                <div class="content">
+                    <a href="" >Demo</a>
+                    <a href="">source code</a>
+                </div>
+            </div>
+                <h2 class="text-uppercase text-center">ali book franchise</h2>
+            </div>
+            </div>
+            <div class="col-lg-4 mt-5 col-md-6 col-sm-12 mt-5 project html" data-item="html">
+                <div class="card">
+                    <div class="projects">
+                <img src="images/15.PNG" alt="" class="card-img-top">
+                <div class="content">
+                    <a href="" >Demo</a>
+                    <a href="">source code</a>
+                </div>
+            </div>
+                <h2 class="text-uppercase text-center">travel website</h2>
+            </div>
+            </div>
+            <div class="col-lg-4 mt-5 col-md-6 col-sm-12 mt-5 project javascript" data-item="html">
+                <div class="card">
+                    <div class="projects">
+                <img src="images/11.PNG" alt="" class="card-img-top">
+                <div class="content">
+                    <a href="" >Demo</a>
+                    <a href="">source code</a>
+                </div>
+            </div>
+                <h2 class="text-uppercase text-center">random quote generator</h2>
+            </div>
+            </div>
+            <div class="col-lg-4 mt-5 col-md-6 col-sm-12 mt-5 project javascript" data-item="html">
+                <div class="card">
+                    <div class="projects">
+                <img src="images/12.PNG" alt="" class="card-img-top">
+                <div class="content">
+                    <a href="" >Demo</a>
+                    <a href="">source code</a>
+                </div>
+            </div>
+                <h2 class="text-uppercase text-center">digital stopwatch</h2>
+            </div>
+            </div>
+            <div class="col-lg-4 mt-5 col-md-6 col-sm-12 mt-5 project javascript" data-item="html">
+                <div class="card">
+                    <div class="projects">
+                <img src="images/5.PNG" alt="" class="card-img-top">
+                <div class="content">
+                    <a href="" >Demo</a>
+                    <a href="">source code</a>
+                </div>
+            </div>
+                <h2 class="text-uppercase text-center">currency converter</h2>
+            </div>
+            </div>
+            <div class="col-lg-4 mt-5 col-md-6 col-sm-12 mt-5 project javascript" data-item="html">
+                <div class="card">
+                    <div class="projects">
+                <img src="images/6.PNG" alt="" class="card-img-top">
+                <div class="content">
+                    <a href="" >Demo</a>
+                    <a href="">source code</a>
+                </div>
+            </div>
+                <h2 class="text-uppercase text-center">digital clock</h2>
+            </div>
+            </div>
+        </div>
+        <a href="project filter.html" class="btn btn-primary mt-3">see all</a>
+    </div>
+        </section>
+        <section>
+            <div id="blogs">
+                <div class="row">
+                            <h2 class="text-center">RECENT BLOGS</h2>
+                       <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInLeft mt-5" data-wow-duration=".4s" data-wow-delay=".4s">
+                           <div class="latest-news-wrap card">
+                               <div class="news-img">
+                                   <img  src="images/blog 1.jpg" class="card-img-top">
+                                   <div class="deat">
+                                       <span class="date">31</span>
+                                       <span class="month">Dec</span>                                     
+                                   </div>                                
+                               </div>
+                               <div class="news-content">
+                                   <i class="fa fa-facebook"></i>
+                                   <i class="fa fa-twitter"></i>
+                                   <i class="fa fa-linkedin"></i>
+                                   <i class="fa fa-youtube"></i>
+                                   <i class="fa fa-whatsapp"></i>
+                                   <p>
+                                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae natus nisi eaque, sapiente pariatur sequi asperiores culpa libero quos sed?
+                                   </p>
+                                   <a href="">Read more..</a>                              
+                               </div>                         
+                               </div>                       
+                              </div>
+                         <div class="col-lg-4 col-md-6 col-sm-12 wow slideInUp mt-5" data-wow-duration=".8s" data-wow-delay=".8s">
+                           <div class="latest-news-wrap card">
+                               <div class="news-img">
+                                   <img  src="images/blog 2.jpg" class="card-img-top">
+                                   <div class="deat">
+                                       <span class="date">31</span>
+                                       <span class="month">Dec</span>                                     
+                                   </div>                                 
+                               </div>
+                               <div class="news-content">
+                                   <i class="fa fa-facebook"></i>
+                                   <i class="fa fa-twitter"></i>
+                                   <i class="fa fa-linkedin"></i>
+                                   <i class="fa fa-youtube"></i>
+                                   <i class="fa fa-whatsapp"></i>
+                                   <p>
+                                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus sed obcaecati dignissimos expedita nostrum fugit, odit quisquam sint ea!
+                                   </p>
+                                   <a href="">Read more..</a>  
+                               </div>                         
+                               </div>                       
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInRight mt-5" data-wow-duration=".6s" data-wow-delay=".6s">
+                              <div class="latest-news-wrap card">
+                               <div class="news-img">
+                                   <img  src="images/blog 3.jpg" class="card-img-top">
+                                   <div class="deat">
+                                    <span class="date">31</span>
+                                    <span class="month">Dec</span>                                 
+                                   </div>                                
+                               </div>
+                               <div class="news-content">
+                                   <i class="fa fa-facebook"></i>
+                                   <i class="fa fa-twitter"></i>
+                                   <i class="fa fa-linkedin"></i>
+                                   <i class="fa fa-youtube"></i>
+                                   <i class="fa fa-whatsapp"></i>
+                                   <p>
+                                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam labore distinctio odio voluptatum blanditiis molestias dolorum non architecto cupiditate adipisci.
+                                   </p>
+                                   <a href="">Read more..</a>                              
+                               </div>                         
+                               </div>               
+                            </div>         
+                           </div>
+    </div>
+        </section>
+    </div>
+        <section id="contactBox">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heading">
+                        <h2 class="text-center m-4">contact us</h2>
+                        <p class="text-center m-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ab tenetur labore sit! Eos sequi facere hic vero, nulla pariatur doloribus a debitis numquam laudantium porro amet aliquam cumque itaque. Minus, amet nulla tenetur quis eaque provident! Aspernatur dicta nemo dolor in distinctio illo obcaecati repellendus magni, consectetur reprehenderit pariatur.</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="contactinfo">
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="text1">
+                                <h3>Address</h3>
+                                <address>
+                                    510-b third Avenue
+                                    baral colony<br/>
+                                    mangla cantt
+                                </address>
+                            </div>
+                            </div>
+                            <div class="box">
+                            <div class="icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="text1">
+                                <h3>phone number</h3>
+                                <address>03170068650</address>
+                            </div>
+                            </div>
+                            <div class="box">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="text1">
+                                <h3>Email</h3>
+                                <address>muhammadalimirza90@gmail.com</address>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="contactform">
+                    <h2>Send Message</h2>
+                    <form action="">
+                        <div class="inputbox">
+                            <input type="text" name="" id="" required>
+                            <span>Enter full name</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="email" name="" id="" required>
+                            <span>Enter Email</span>
+                        </div>
+                        <div class="inputbox">
+                            <textarea name="" id="" required></textarea>
+                            <span>Type your message</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="submit" value="submit" name="" id="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6681.578574236185!2d73.61773772541693!3d33.140899907035895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391ff22425c61f85%3A0x6f0acc490ecadcad!2sMangla%20Cantt%2C%20Mangla%20Hamlet%2C%20Jhelum%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1622546790351!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        </section>
+        <footer id="footer" class="footer-1">
+            <div class="main-footer widgets-dark typo-light">
+            <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="widget subscribe no-box">
+            <h5 class="widget-title">About us<span></span></h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi aperiam ipsum et aspernatur ut maxime temporibus dolor aut molestiae minima! </p>
+            </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="widget no-box">
+            <h5 class="widget-title">Quick Links<span></span></h5>
+            <ul class="thumbnail-widget">
+            <li>
+            <div class="thumb-content"><a href="#.">Home</a></div> 
+            </li>
+            <li>
+            <div class="thumb-content"><a href="#.">About us</a></div> 
+            </li>
+            <li>
+                <div class="thumb-content"><a href="#.">Skills</a></div> 
+                </li>
+                <li>
+                    <div class="thumb-content"><a href="#.">Services</a></div> 
+                    </li>
+                    <li>
+                        <div class="thumb-content"><a href="#.">Blog</a></div> 
+                        </li>
+                        <li>
+                            <div class="thumb-content"><a href="#.">Contact us</a></div> 
+                            </li>
+            </ul>
+            </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="widget no-box">
+            <h5 class="widget-title">Contact Us<span></span></h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <div class="emailfield">
+            <input type="text" name="email" value="Email">
+            <input name="uri" type="hidden" value="arabiantheme">
+            <input name="loc" type="hidden" value="en_US">
+            <input class="submitbutton ripplelink" type="submit" value="Subscribe">
+            </form>  
+            </div>
+            </div>
+            
+            </div>
+            </div>
+            </div>
+              
+            <div class="footer-copyright">
+            <div class="container">
+            <div class="row">
+            <div class="col-md-12 text-center">
+                <a href="example.html">privacy policy</a>
+            <p>Copyright muhammad ali mirza @2021. All rights reserved.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+            </footer>
+    <script src="javascript/index.js"></script>
+</body>
+</html>
