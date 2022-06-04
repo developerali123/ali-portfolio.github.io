@@ -1,18 +1,21 @@
+html{
+  scroll-behavior: smooth;
+}
 *{
   margin:0;
   padding:0;
   box-sizing: border-box;
 }
-body{
+/* body{
   scroll-behavior: smooth;
   background-attachment: scroll;
-}
+} */
 section{
   scroll-snap-type: y mandatory;
   height:100%;
 }
 section>.row{
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   height: 100%;
 }
 
@@ -211,6 +214,9 @@ padding: 20px;
   margin:25px;
   font-weight: 500;
 }  
+.typing{
+  color:blue;
+}
 .title button {
   margin: 10px;
   padding: 15px;
@@ -485,6 +491,15 @@ margin-bottom: 30px;
 #certificates{
   width: 90%;
   margin: auto;
+}
+.img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img img{
+  width: 100px;
+  height: 100px;
 }
 #certificates .item{
   background-color: red;
@@ -1028,3 +1043,4 @@ footer input.submitbutton.ripplelink {
 }
 
 
+s
