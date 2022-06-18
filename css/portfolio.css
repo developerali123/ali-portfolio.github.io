@@ -206,16 +206,22 @@ padding: 20px;
     color:blue;
     font-size: 65px;
 }
-.text,.typed-cursor{
+.typing{
+  font-size: 50px;
+  font-weight: 500;
+}
+.text{
   display: inline;
   text-align: center;
   font-size: 50px;
   text-transform: uppercase;
-  margin:25px;
+  margin-left:5px;
   font-weight: 500;
-}  
-.typing{
-  color:blue;
+  color: blue;
+  text-decoration: underline dotted blue;
+}
+.text:after{
+  content:"|";
 }
 .title button {
   margin: 10px;
@@ -303,7 +309,7 @@ padding: 20px;
     display: inline-block;
     margin-left: 10px;
   }
-  .text{
+  .text,.typing{
     font-size:30px;
   }
 }
@@ -325,10 +331,13 @@ padding: 20px;
   #ali{
     height: 150px;
   }
-  .text,.typed-cursor{
+  #section1 .text{
     font-size: 30px;
-    margin-top: 5px;
   }
+  #section1 .typing{
+    font-size: 30px;
+  }
+
   .title h1{
     font-size: 30px;
   }
@@ -638,10 +647,6 @@ margin-bottom: 30px;
   background: green;
   padding: 10px;
   border-radius: 25px;
-}
-.projects img{
-  /* height: 100%; */
-  /* width: 100%; */
 }
 
     /* contact form */
@@ -1043,4 +1048,3 @@ footer input.submitbutton.ripplelink {
 }
 
 
-s

@@ -1,17 +1,18 @@
 "use strict"
         var typed = new Typed('.text', {
             strings:[
-                "i am <span class='typing'>Full stack developer</span>",
-                    "i am <span class='typing'>web designer</span>",
-                    "i am <span class='typing'>web developer</span>",
-                    "i am <span class='typing'>freelancer</span>",
-                    "i am <span class='typing'>youtuber</span>",
-                    "i am <span class='typing'>blooger</span>",
+                "Full stack developer",
+                    "web designer",
+                    "web developer",
+                    "freelancer",
+                    "youtuber",
+                    "blooger",
                 ],  
                 typeSpeed: 200,
+                backspeed:200,
                 loop:true,
                 showCursor: false,
-                autoInsertCss: false,
+                autoInsertCss: true,
             });
             const btnscroll=document.getElementById("scrolltop");
             btnscroll.addEventListener("click",function(){
